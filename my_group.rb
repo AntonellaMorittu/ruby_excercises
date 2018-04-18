@@ -1,17 +1,7 @@
-age = 30
-name = 'person_1'
-gender = 'woman'
+my_band = [{:name => "Anto", :age => 30, :role => "singer"},
+            {:name => "Chris", :age => 35, :role=> "bass player"},
+            {:name => "Lucia", :age => 29, :role=> "keyboard player"}]
 
-puts "#{name} is a #{age} years old #{gender}."
-
-age = 31
-name = 'person_2'
-gender = 'man'
-
-puts "#{name} is a #{age} years old #{gender}."
-
-age = 32
-name = 'person_3'
-gender = 'man'
-
-puts "#{name} is a #{age} years old #{gender}."
+my_band.each do |person|
+  puts "#{person[:name]} is a #{person[:age]} years old #{person[:role]}."
+end

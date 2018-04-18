@@ -1,6 +1,7 @@
 puts "Say something to Deaf Grandma!"
 
 counter =  []
+
 while counter != ['BYE', 'BYE', 'BYE']
   a = gets.chomp
 
@@ -13,5 +14,4 @@ while counter != ['BYE', 'BYE', 'BYE']
     puts 'HUH?! SPEAK UP, SONNY!'
     counter = []
   end
-
 end
